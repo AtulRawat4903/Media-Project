@@ -2,8 +2,8 @@
 
 const App = () => {
   return (
-    <div>
-      <h1>hello</h1>
+    <div className="h-screen w-screen bg-gray-950 text-white">
+      <h1>Hello</h1>
     </div>
   )
 }
