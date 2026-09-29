@@ -24,15 +24,19 @@ A media search app built with React, Vite and Redux. Search photos, videos and G
 
 ### 1. Install dependencies
 
+```bash
 npm install
+```
 
 ### 2. Add your API keys
 
 Create a `.env` file in the project root:
 
+```env
 VITE_UNSPLASH_KEY=your_unsplash_access_key
 VITE_PEXELS_KEY=your_pexels_api_key
 VITE_KLIPY_KEY=your_klipy_api_key
+```
 
 Get keys from:
 
@@ -44,12 +48,16 @@ Restart the dev server after changing `.env`.
 
 ### 3. Run the app
 
+```bash
 npm run dev
+```
 
 Other scripts:
 
-npm run build # production build
-npm run preview # preview the production build
+```bash
+npm run build     # production build
+npm run preview   # preview the production build
+```
 
 ## Project structure
 
