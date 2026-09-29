@@ -1,1 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Inter:wght@400;500;600&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #0b1220;
+  --color-panel: #131c2e;
+  --color-line: #24304a;
+  --color-accent: #f5b83d;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-ink);
+}
+
+.shade {
+  background: linear-gradient(
+    to top,
+    rgb(5 10 20 / 0.92),
+    rgb(5 10 20 / 0.4) 55%,
+    transparent
+  );
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #131c2e 25%, #1b2740 50%, #131c2e 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite linear;
+}
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: none;
+  }
+}
